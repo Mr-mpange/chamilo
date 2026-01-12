@@ -1,0 +1,150 @@
+/* Institute of Accountancy Arusha - Quick CSS Injection */
+/* Copy this entire CSS code and paste it in Admin Panel → Platform → Configuration → Display → Extra CSS */
+
+/* Institute Colors */
+:root {
+    --iaa-primary: #1e3a8a;
+    --iaa-secondary: #f59e0b;
+    --iaa-accent: #059669;
+}
+
+/* Body and General */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    background-color: #f8fafc;
+}
+
+/* Navigation Bar */
+.navbar, .navbar-default {
+    background-color: #1e3a8a !important;
+    border-bottom: 3px solid #f59e0b;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-weight: bold !important;
+}
+
+.navbar-nav > li > a {
+    color: rgba(255,255,255,0.9) !important;
+}
+
+.navbar-nav > li > a:hover {
+    color: #f59e0b !important;
+    background-color: rgba(255,255,255,0.1) !important;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #1e3a8a !important;
+    border-color: #1e3a8a !important;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #f59e0b !important;
+    border-color: #f59e0b !important;
+    color: #1f2937 !important;
+}
+
+.btn-success {
+    background-color: #059669 !important;
+    border-color: #059669 !important;
+}
+
+/* Panels and Cards */
+.panel-heading, .card-header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #f59e0b 100%) !important;
+    color: white !important;
+    font-weight: bold;
+}
+
+.panel-title {
+    color: white !important;
+}
+
+/* Tables */
+.table thead th {
+    background-color: #1e3a8a !important;
+    color: white !important;
+}
+
+/* Forms */
+.form-control:focus {
+    border-color: #1e3a8a !important;
+    box-shadow: 0 0 0 0.2rem rgba(30, 58, 138, 0.25) !important;
+}
+
+/* Progress Bars */
+.progress-bar {
+    background-color: #f59e0b !important;
+}
+
+/* Links */
+a {
+    color: #1e3a8a !important;
+}
+
+a:hover {
+    color: #f59e0b !important;
+}
+
+/* Alerts */
+.alert-info {
+    background-color: #e0f2fe !important;
+    border-color: #1e3a8a !important;
+    color: #1e3a8a !important;
+}
+
+/* Course Items */
+.course-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+/* Login Page */
+.login-wall {
+    background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%) !important;
+}
+
+/* Footer */
+#footer, .footer {
+    background-color: #1f2937 !important;
+    color: white !important;
+}
+
+#footer a, .footer a {
+    color: #f59e0b !important;
+}
+
+/* Institute Header Styling */
+.institute-header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #f59e0b 100%);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.institute-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.institute-subtitle {
+    font-size: 18px;
+    opacity: 0.9;
+    margin: 10px 0 0 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .institute-title {
+        font-size: 24px;
+    }
+    .institute-subtitle {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,184 @@
+/* Institute of Accountancy Arusha - Custom Theme */
+
+/* Primary Colors - Professional Blue and Gold */
+:root {
+    --iaa-primary: #1e3a8a;      /* Deep Blue */
+    --iaa-secondary: #f59e0b;    /* Gold */
+    --iaa-accent: #059669;       /* Green */
+    --iaa-light: #f8fafc;        /* Light Gray */
+    --iaa-dark: #1f2937;         /* Dark Gray */
+}
+
+/* Header Customization */
+.header-top {
+    background: linear-gradient(135deg, var(--iaa-primary) 0%, var(--iaa-secondary) 100%);
+    color: white;
+    padding: 10px 0;
+}
+
+.header-top .container {
+    text-align: center;
+}
+
+.institute-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.institute-subtitle {
+    font-size: 14px;
+    opacity: 0.9;
+    margin: 5px 0 0 0;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: var(--iaa-primary) !important;
+    border-bottom: 3px solid var(--iaa-secondary);
+}
+
+.navbar-brand {
+    color: white !important;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: rgba(255,255,255,0.9) !important;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--iaa-secondary) !important;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--iaa-primary);
+    border-color: var(--iaa-primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--iaa-secondary);
+    border-color: var(--iaa-secondary);
+    color: var(--iaa-dark);
+}
+
+.btn-success {
+    background-color: var(--iaa-accent);
+    border-color: var(--iaa-accent);
+}
+
+/* Cards and Panels */
+.card {
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card-header {
+    background: linear-gradient(135deg, var(--iaa-primary) 0%, var(--iaa-secondary) 100%);
+    color: white;
+    font-weight: bold;
+}
+
+/* Course Cards */
+.course-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--iaa-dark);
+    color: white;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.footer a {
+    color: var(--iaa-secondary);
+}
+
+/* Login Page */
+.login-container {
+    background: linear-gradient(135deg, var(--iaa-light) 0%, #e0e7ff 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    padding: 40px;
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Accounting-specific styling */
+.accounting-module {
+    border-left: 4px solid var(--iaa-secondary);
+    padding-left: 15px;
+}
+
+.financial-data {
+    font-family: 'Courier New', monospace;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Quiz and Assessment Styling */
+.quiz-container {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.question-number {
+    background-color: var(--iaa-primary);
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Progress Indicators */
+.progress-bar {
+    background-color: var(--iaa-secondary);
+}
+
+.progress {
+    background-color: #e5e7eb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .institute-title {
+        font-size: 20px;
+    }
+    
+    .institute-subtitle {
+        font-size: 12px;
+    }
+    
+    .login-card {
+        margin: 20px;
+        padding: 30px;
+    }
+}
