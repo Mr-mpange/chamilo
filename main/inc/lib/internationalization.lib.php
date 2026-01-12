@@ -1052,7 +1052,7 @@ function api_sort_by_first_name($language = null)
  *               'quarter_end' => '2022-12-31',
  *               'quarter_title' => 'Q4 2022']
  */
-function getQuarterDates(string $date = null): array
+function getQuarterDates(?string $date = null): array
 {
     if (empty($date)) {
         $date = api_get_utc_datetime();

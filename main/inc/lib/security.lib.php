@@ -154,7 +154,7 @@ class Security
      *
      * @return bool True if it's the right token, false otherwise
      */
-    public static function check_token(string $requestType = 'post', FormValidator $form = null, string $prefix = ''): bool
+    public static function check_token(string $requestType = 'post', ?FormValidator $form = null, string $prefix = ''): bool
     {
         $secTokenVariable = self::generateSecTokenVariable($prefix);
         $sessionToken = Session::read($secTokenVariable);
@@ -310,7 +310,7 @@ class Security
      *
      * @return mixed Filtered string or array
      */
-    public static function remove_XSS($var, int $user_status = null, bool $filter_terms = false)
+    public static function remove_XSS($var, ?int $user_status = null, bool $filter_terms = false)
     {
         if ($filter_terms) {
             $var = self::filter_terms($var);
