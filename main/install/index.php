@@ -1,6 +1,10 @@
 <?php
 /* For licensing terms, see /license.txt */
 
+// Suppress deprecation warnings for PHP 8.5 compatibility
+error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE);
+ini_set('display_errors', '0');
+
 use ChamiloSession as Session;
 
 /**
